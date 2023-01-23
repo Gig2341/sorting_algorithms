@@ -1,20 +1,4 @@
-t i = lo - 1, j = lo;
-    int pivot = array[hi], aux = 0;
-
-    for (; j < hi; j++)
-    {
-        if (array[j] < pivot)
-        {
-            i++;
-            if (array[i] != array[j])
-            {
-                aux = array[i];
-                array[i] = array[j];
-                array[j] = aux;
-                print_array(array, size);
-            }
-        }
-    }#include "sort.h"
+#include "sort.h"
 
 /**
  * quick_sort - function that sorts an array of integers
@@ -23,6 +7,8 @@ t i = lo - 1, j = lo;
  * @size: array's size
  * Return: void
  */
+void quick_s(int *array, int lo, int hi, size_t size);
+
 void quick_sort(int *array, size_t size)
 {
 	if (array == NULL || size < 2)
@@ -41,7 +27,23 @@ void quick_sort(int *array, size_t size)
  */
 int partition(int *array, int lo, int hi, size_t size)
 {
-	in
+    int i = lo - 1, j = lo;
+    int pivot = array[hi], aux = 0;
+
+    for (; j < hi; j++)
+    {
+        if (array[j] < pivot)
+        {
+            i++;
+            if (array[i] != array[j])
+            {
+                aux = array[i];
+                array[i] = array[j];
+                array[j] = aux;
+                print_array(array, size);
+            }
+        }
+    }
 	if (array[i + 1] != array[hi])
 	{
 		aux = array[i + 1];
