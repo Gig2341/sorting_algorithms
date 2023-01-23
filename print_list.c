@@ -21,7 +21,6 @@ void print_list(const listint_t *list)
         list = list->next;
     }
     printf("\n");
-=======
 	int i;
 
 	i = 0;
@@ -34,5 +33,4 @@ void print_list(const listint_t *list)
 		list = list->next;
 	}
 	printf("\n");
->>>>>>> 696f3740400b3190e720e1c9894059b4a3bcf3c1
 }
