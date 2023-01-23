@@ -8,7 +8,6 @@
  */
 void print_list(const listint_t *list)
 {
-<<<<<<< HEAD
     int i;
 
     i = 0;
