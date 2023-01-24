@@ -7,11 +7,10 @@
  * Returns: Null
  */
 
-
 void swap_ints(int *a, int *b)
 {
 	int temp;
-	
+
 	temp = *a;
 	*a = *b;
 	*b = temp;
@@ -47,5 +46,5 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 		len--;
-	}	
+	}
 }
