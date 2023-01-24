@@ -4,7 +4,6 @@
  * swap_ints - a function  that swaps integers
  * @ a - fisrt integer
  * @ b - second integer
- * Returns: Null
  */
 
 void swap_ints(int *a, int *b)
@@ -21,7 +20,8 @@ void swap_ints(int *a, int *b)
  * bubble_sort - function that bubble sorts integers
  * @ array - an array to be sorted
  * @ size - the size of the array
- * Returns: a bubble sorted array in ascending order
+ *
+ * Description: prints the array after each swap
  */
 
 void bubble_sort(int *array, size_t size)
