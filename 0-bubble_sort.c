@@ -2,7 +2,21 @@
 
 
 /**
- * bubble_sort - function that bubble sorts integers
+ * swap_ints - function that swaps integers
+ * @ a - fisrt number to be swapped
+ * @ b - second number to be swapped
+ */
+
+void swap_ints(int *a, int *b)
+{
+	int temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+/** bubble_sort - function that bubble sorts integers
  * @ array - an array to be sorted
  * @ size - the size of the array
  *
